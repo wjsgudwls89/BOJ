@@ -8,7 +8,8 @@ int min;
 int memo[100001];
 
 void d_three(int x, int cnt) { 
-
+	//대체 이조건문이 왜 동작하는지?
+	//씨발 memo에 아무것도 안넣는다고 ;;
 	if ((memo[x] && cnt > memo[x]) || cnt > min)
 		return;
 
