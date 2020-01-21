@@ -8,7 +8,7 @@ public class BOJ15649 {
     static int n, m;
     static int visit[] = new int[9];
     static int arr[] = new int[9];
-    public static StringBuilder sb = new StringBuilder();
+    public static StringBuilder sb = new StringBuilder(); // 이걸쓰면 시간대폭 줄일 수 있음
     public  static void DFS(int depth){
         if(depth ==m){
             for (int i = 1; i <=m ; i++) {
@@ -32,7 +32,7 @@ public class BOJ15649 {
         Scanner sc = new Scanner(System.in);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer((br.readLine()));
-
+        //이부분은 외우는게 좋을듯하다.
         n = Integer.parseInt(st.nextToken());
         m = Integer.parseInt(st.nextToken());
 
